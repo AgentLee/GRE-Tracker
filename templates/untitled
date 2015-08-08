@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1>Add a new score</h1>
+	<form class="form-horizontal" method = "post" action = "/addscore">
+		<p><label>Test:</label> <input class="form-control textbox" type="text" name="test" required></p>
+		<p><label>Date Taken:</label> <input class="form-control textbox" type="text" name="datetaken" required></p>
+		<p><label>Quant:</label> <input class="form-control textbox" type="text" name="quant" required></p>
+		<p><label>Verbal:</label> <input class="form-control textbox" type="text" name="verbal" required></p>
+        <p><button type="submit" class = "btn btn-success">Add score</button></p>
+	</form>
+{% endblock %}

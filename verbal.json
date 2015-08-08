@@ -1,11 +1,16 @@
 [
-	{"topic":"Text Completion Overview"},
-	{"topic":"Text Completion No Shifts"},
-	{"topic":"Text Completion Sentence Shifts"},
-	{"topic":"Text Completion Double Blanks"},
-	{"topic":"Text Completion Triple Blanks"},
-	{"topic":"Sentence Equivalence"},
-	{"topic":"Vocabulary"},
-	{"topic":"Reading Comprehension"},
-	{"topic":"Paragraph Argument"}
+	{
+		"topic":"Text Completion Overview",
+		"videos":6
+	},
+	{"topic":"Text Completion No Shifts",
+		"videos":4
+	},
+	{"topic":"Text Completion Sentence Shifts", "videos":9},
+	{"topic":"Text Completion Double Blanks", "videos":6},
+	{"topic":"Text Completion Triple Blanks", "videos":8},
+	{"topic":"Sentence Equivalence", "videos": 6},
+	{"topic":"Vocabulary", "videos": 11},
+	{"topic":"Reading Comprehension", "videos": 14},
+	{"topic":"Paragraph Argument", "videos":10}
 ]

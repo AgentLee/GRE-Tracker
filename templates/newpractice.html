@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1>Log Practice Session</h1>
+	<form class="form-horizontal" method = "post" action = "/addpractice">
+		<p><label>Topic:</label> <input class="form-control textbox" type="text" name="topic" required></p>
+		<p><label>Date:</label> <input class="form-control textbox" type="text" name="date" required></p>
+		<p><label>Number Correct:</label> <input class="form-control textbox" type="text" name="correct" required></p>
+		<p><label>Total Problems:</label> <input class="form-control textbox" type="text" name="total" required></p>
+        <p><button type="submit" class = "btn btn-success">Log it!</button></p>
+	</form>
+{% endblock %}

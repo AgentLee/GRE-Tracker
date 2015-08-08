@@ -1,5 +1,16 @@
-.newscore {
-	float:right;
+.newbutton {
+	margin-bottom: 20px;
+}
+
+.newform {
+	padding: 0px;
+	margin: 0px;
+	margin-top: 20px;
+	float: right;
+	margin-right: 10px;
+}
+
+.newtarget {
 	margin-bottom: 20px;
 }
 

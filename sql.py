@@ -16,11 +16,16 @@ def dbadd():
 		c.execute('INSERT INTO quantpractice VALUES("barrons pt 2", "8/7/15", 27, 40)')
 
 def addtodb(test, datetaken, quant, verbal):
-	print test, datetaken, quant, verbal
+	#print test, datetaken, quant, verbal
 	
 	with sqlite3.connect("gre.db") as connection:
 		c = connection.cursor()
 		c.execute('INSERT INTO scores VALUES(%s, %s, %d, %d)', test, datetaken, quant, verbal)
+
+def addpractice(topic, date, correct, total):
+	with sqlite3.connect("gre.db") as connection:
+		c = connection.cursor()
+		c.execute('INSERT INTO quantpractice VALUES(?,?,?,?)', (topic, date, correct, total))
 
 def addtopics():
 	with open("quant.json") as datafile:
@@ -45,7 +50,10 @@ def addtopics():
 
 
 def main():
-	dbadd()
+	test = "test"
+	date = "8/8/15"
+	num = 40
+	addpractice(test, date, num, num)
 
 if __name__ == "__main__":
 	main()

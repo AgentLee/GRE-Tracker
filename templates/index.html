@@ -6,7 +6,12 @@
 	<div class = "col-md-6">
 		<h2 class = "section">Quant</h2>
 		<hr>
-		<h3>Target: {{ myquant }}</h3>
+		<h3>
+			Target: 
+			{% for target in targets %}
+				{{ target['quanttarget']}}
+			{% endfor %}
+		</h3>
 		<div class = "scores">
 			<table class = "table">
 				{% for score in scores %}
@@ -19,6 +24,7 @@
 						</td>
 						<td>
 							<h4 class = "score">{{ score['quant'] }}</h4>
+							<h5><small>edit</small></h5>
 						</td>
 					</tr>
 				{% endfor %}
@@ -38,7 +44,12 @@
 	<div class = "col-md-6">
 		<h2 class = "section">Verbal</h2>
 		<hr>
-		<h3>Target: {{ myverbal }}</h3>
+		<h3>
+			Target: 
+			{% for target in targets %}
+				{{ target['verbaltarget']}}
+			{% endfor %}
+		</h3>
 		<div class = "scores">
 			<table class = "table">
 				{% for score in scores %}
@@ -50,7 +61,8 @@
 							<h5 class = "test"><small>{{ score['datetaken'] }}</small></h5>
 						</td>
 						<td>
-							<h4 class = "score">{{ score['quant'] }}</h4>
+							<h4 class = "score">{{ score['verbal'] }}</h4>
+							<h5><small>edit</small></h5>
 						</td>
 					</tr>
 				{% endfor %}
@@ -58,10 +70,20 @@
 		</div>
 	</div>
 
-	<div class = "col-md-12">
-		<form action = "/addnew">
-			<button class = "btn btn-primary newscore">
-				Add new score
+	<div class = "col-md-3"></div>
+	<div class = "col-md-3"></div>
+
+	<div class = "col-md-3">
+		<form action = "/addnew" class = "newform">
+			<button class = "btn btn-primary newbutton">
+				Add New Score
+			</button>
+		</form>
+	</div>
+	<div class = "col-md-3">
+		<form action = "" class = "newform">
+			<button class = "btn btn-danger newbutton">
+				Change Target
 			</button>
 		</form>
 	</div>
