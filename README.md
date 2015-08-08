@@ -1,4 +1,4 @@
-# GRE-Tracker
+# GRE Tracker
 
 Track your GRE Progress 
 - Log practice test scores
