@@ -1,7 +1,7 @@
 # GRE-Tracker
 
-=====
 Track your GRE Progress 
+====
 
 ====
 Things to add:
