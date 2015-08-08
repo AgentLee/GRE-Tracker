@@ -1,0 +1,57 @@
+.newscore {
+	float:right;
+	margin-bottom: 20px;
+}
+
+.section {
+	text-align: center;
+	border-radius: 7px;
+}
+
+.scores {
+	border-style: solid;
+	border-radius: 7px;
+}
+
+.test {
+	padding-left: 35px;
+	padding-right: 0px;
+}
+
+.score {
+	padding-right: 25px;
+	padding-left: 0px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.text-muted {
+	margin-top: 20px;
+}
+
+hr {
+	margin-top: -5px;
+}
+
+.textbox {
+	width: 50% !important;
+}
+
+.topics {
+	text-align: right !important;
+}

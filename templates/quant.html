@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}Quant{% endblock %}
+{% block content %}
+	<div class = "col-md-12">
+		<h1>Quant</h1>
+
+		
+	</div>
+	<div class = "col-md-8">
+		<h2>Progress</h2>
+		<table class = "table">
+			{% for p in practice %}
+				<tr>
+					<td>
+						{{ p['topic'] }}
+						<br>
+						<small>{{ p['date'] }}</small>
+					</td>
+					<td>{{ p['correct'] }}</td>
+					<td>{{ p['total'] }}</td>
+				</tr>	
+			{% endfor %}
+		</table>
+		<form action = "/quantlog">
+			<button class = "btn btn-primary newscore">
+				Log new practice
+			</button>
+		</form>
+	</div>
+	<div class = "col-md-4">
+		<h2 class = "topics">Topics</h2>
+		<table class = "table">
+			{% for topic in topics %}
+				<tr>
+					<td class = "topics">{{ topic }}</td>
+				</tr>
+			{% endfor %}
+		</table>
+
+
+	</div>
+{% endblock %}

@@ -1,0 +1,69 @@
+{% extends "base.html" %}
+{% block title %}My GRE Tracker{% endblock %}
+{% block content %}
+		
+	<!-- CONTENT -->
+	<div class = "col-md-6">
+		<h2 class = "section">Quant</h2>
+		<hr>
+		<h3>Target: {{ myquant }}</h3>
+		<div class = "scores">
+			<table class = "table">
+				{% for score in scores %}
+					<tr>
+						<td>
+							<h4 class = "test">
+								<small>{{ score['test'] }}</small>
+							</h4>
+							<h5 class = "test"><small>{{ score['datetaken'] }}</small></h5>
+						</td>
+						<td>
+							<h4 class = "score">{{ score['quant'] }}</h4>
+						</td>
+					</tr>
+				{% endfor %}
+			</table>
+		</div>
+		<br>
+		
+		<!-- 
+		<div class = "progress">
+			<div class = "progress-bar" role = "progressbar" aria-valuenow={{ myquant }} aria-valuemin="0" aria-valuemax="170" style="width: {{ quantpercent }}%">
+
+			</div>
+		</div>
+		-->
+	</div>
+
+	<div class = "col-md-6">
+		<h2 class = "section">Verbal</h2>
+		<hr>
+		<h3>Target: {{ myverbal }}</h3>
+		<div class = "scores">
+			<table class = "table">
+				{% for score in scores %}
+					<tr>
+						<td>
+							<h4 class = "test">
+								<small>{{ score['test'] }}</small>
+							</h4>
+							<h5 class = "test"><small>{{ score['datetaken'] }}</small></h5>
+						</td>
+						<td>
+							<h4 class = "score">{{ score['quant'] }}</h4>
+						</td>
+					</tr>
+				{% endfor %}
+			</table>
+		</div>
+	</div>
+
+	<div class = "col-md-12">
+		<form action = "/addnew">
+			<button class = "btn btn-primary newscore">
+				Add new score
+			</button>
+		</form>
+	</div>
+
+{% endblock %}

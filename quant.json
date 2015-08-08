@@ -1,0 +1,54 @@
+[
+	{
+		"topic":"Arithmetic and Fractions",
+		"videos":11
+	},
+	{
+		"topic":"Percents and Ratios",
+		"videos":16
+	},
+	{
+		"topic":"Integer Properties",
+		"videos":15
+	},
+	{
+		"topic":"Algebra, Equations, and Inequalities",
+		"videos":24
+	},
+	{
+		"topic":"Word Problems",
+		"videos":24
+	},
+	{
+		"topic":"Powers and Roots",
+		"videos":16
+	},
+	{
+		"topic":"Geometry",
+		"videos":18
+	},
+	{
+		"topic":"Coordinate Geometry",
+		"videos":10
+	},
+	{
+		"topic":"Statistics",
+		"videos":9
+	},
+	{
+		"topic":"Counting",
+		"videos":12
+	},
+	{
+		"topic":"Probability",
+		"videos":16
+	},
+	{
+		"topic":"Data Interpretation",
+		"videos":5
+	},
+	{
+		"topic":"Advanced",
+		"videos":6
+	}
+]

@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+	<h1>Add New Score</h1>
+	<form method = "post" action = "{{ url_for('signup') }}">
+		<label>Test:</label> <input type="text" name="test" required>
+		<label>Date Taken:</label> <input type="text" name="datetaken" required></p>
+		<label>Quant:</label> <input type="text" name="quant" required>
+		<label>Verbal:</label> <input type="text" name="verbal" required>
+        <button type="submit">Add score</button>
+	</form>
+{% endblock %}
